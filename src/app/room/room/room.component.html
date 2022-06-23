@@ -1,0 +1,31 @@
+<section>
+  <div class="header">
+    <div class="contentHeader">
+      <div class="icon">
+        <i class="fa-solid fa-bell "></i>
+      </div>
+      <div class="user">
+        <img src="https://secure.gravatar.com/avatar/69ae851573b0ccc7dd99f7ccda10edc8?s=46&d=identicon" alt="">
+        <p>Huân</p>
+      </div>
+    </div>
+
+  </div>
+  <div class="content">
+    <ul>
+      <li routerLink="/playingchess" *ngFor="let room of listRoom" (click)="handleClick(room)">
+        <div class="room">
+        <div class="bgTopRoom">
+          <p>{{room.name}}</p>
+          <img src="https://secure.gravatar.com/avatar/69ae851573b0ccc7dd99f7ccda10edc8?s=46&d=identicon" alt="">
+        </div>
+        <div class="bgBotRoom">
+          <button>user 1</button>
+          -
+          <button>. . . . .</button>
+        </div>
+      </div></li>
+
+    </ul>
+  </div>
+</section>

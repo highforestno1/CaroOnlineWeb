@@ -1,0 +1,21 @@
+<div class="flex-1 p-5 bg-amber-50" >
+  <p class="flex justify-center text-3xl ">Login your account</p>
+  <form [formGroup]="dataLogin" (ngSubmit)="onSubmit()">
+    <mat-form-field class="example-full-width w-full mt-2" appearance="outline">
+      <mat-label>Username</mat-label>
+      <input matInput placeholder="Username" formControlName="username">
+    </mat-form-field>
+    <mat-form-field class="example-full-width w-full" appearance="outline">
+      <mat-label>Password</mat-label>
+      <input matInput placeholder="Password" formControlName="password">
+    </mat-form-field>
+    <div class="flex justify-between mb-2">
+      <mat-checkbox class="example-margin text-lg">Remember me!</mat-checkbox>
+      <p class="text-sky-500 text-lg">Forgot password</p>
+    </div>
+    <button mat-raised-button class="bg-red-500 text-white w-full p-3 rounded-sm  text-lg">Login</button>
+  </form>
+  <div class="flex justify-center mt-11 text-xl">
+    <p>Don't have account?</p><button routerLink="signup"><p class="text-sky-400">Sign up</p></button>
+  </div>
+</div>

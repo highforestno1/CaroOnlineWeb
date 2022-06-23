@@ -1,0 +1,29 @@
+<section class="container">
+  <img class="bg" src="/assets/img/ipiccy_image (2).png" alt="">
+  <div class="header">
+    <label>Phòng số 1</label>
+    <div class="icon">
+      <i class="fa-solid fa-bell "></i>
+      <i class="fa-solid fa-user "></i>
+
+      <span>Khánh</span>
+    </div>
+
+  </div>
+  <div class="body">
+    <div class="player-1">
+      <p>Player 1: Khánh</p>
+      <p>Số trận thắng: </p>
+    </div>
+    <div class="chess-table mt-24">
+      <div class="grid grid-cols-12 gap-1 mt-1" *ngFor="let chess of chessBoard,let x=index">
+        <button class="bg-blue-500 h-8 w-8" *ngFor="let btn of chess,let y = index" (click)="pic(x,y)">{{btn == '-1' ? '' : btn == 0 ? 'O': "X"  }}</button>
+      </div>
+    </div>
+    <div class="player-1">
+      <p>Player 2: Toàn</p>
+      <p>Số trận thắng: </p>
+    </div>
+  </div>
+
+</section>

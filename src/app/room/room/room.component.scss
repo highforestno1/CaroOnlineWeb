@@ -1,0 +1,53 @@
+section{
+  @apply h-full w-full relative;background-color: aqua;
+  .header{
+    @apply absolute bg-black text-white h-16 text-xl top-0 w-full ;
+    .contentHeader{
+      @apply flex  float-right h-full;
+      .icon {
+        @apply flex mt-auto mb-auto mr-20;
+        i{ @apply ml-5}
+        i:hover{ cursor: pointer}
+
+      }
+      .user{
+        @apply flex mr-5;
+        img{@apply w-8 h-8 rounded-full mt-auto mb-auto mr-2}
+        p{@apply mt-auto mb-auto}
+      }
+      .user:hover{cursor: pointer}
+    }
+
+  }
+  .content{
+    @apply h-full pt-32;
+    ul{
+      @apply w-10/12 ml-auto mr-auto flex justify-between ;
+      li{
+        @apply  bg-blue-400 rounded-3xl;
+        width: 23%;
+        .room{
+          @apply w-8/12 ml-auto mr-auto ;
+          .bgTopRoom{
+            @apply flex justify-between mt-4;
+            p{
+              @apply text-3xl
+            }
+            img{
+              @apply w-10 h-10 rounded-full;
+            }
+          }
+          .bgBotRoom{
+            @apply pb-4 pt-16 text-2xl;
+
+          }
+        }
+      }
+      li:hover{
+        box-shadow: 10px 10px 10px gray ;
+        cursor: pointer;
+      }
+
+    }
+  }
+}

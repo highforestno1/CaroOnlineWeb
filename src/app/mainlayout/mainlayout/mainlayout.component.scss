@@ -1,0 +1,11 @@
+.big-layout{
+  .header{
+
+  }
+  .body-layout{
+    .room{
+      @apply h-36 overflow-hidden rounded-2xl;
+      background: url("https://st.gamevui.com/images/image/2018/09/12/choi-co-caro-online.jpg") top center / cover no-repeat;
+    }
+  }
+}
